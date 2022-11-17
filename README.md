@@ -1,1 +1,1 @@
-# restaurant-page
+Restaurant page using npm and webpack
