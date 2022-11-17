@@ -4,6 +4,7 @@
   "description": "Restaurant page using npm and webpack",
   "main": "index.js",
   "scripts": {
+    "watch": "webpack --watch",
     "build": "webpack"
   },
   "repository": {
