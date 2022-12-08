@@ -35,3 +35,42 @@ div.border {
     width: 1px;
     background-color: rgb(222,222,222);
 }
+
+form {
+    display: flex;
+    gap: 4px;
+    height: 3rem;
+    margin-bottom: 3rem;
+}
+
+form>* {
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+form>input {
+    flex: 1;
+    font-size: 1rem;
+    border: 1px solid rgb(222,222,222);
+}
+
+form>button {
+    font-weight: 900;
+    color: white;
+    background-color: red;
+}
+
+#review-header {
+    padding-bottom: 2rem;
+}
+
+#review-section {
+    padding: 0.5rem;
+    border: 1px solid rgb(222,222,222);
+}
+
+.review:not(:last-child) {
+    border-bottom: 1px solid rgb(222,222,222);
+}
