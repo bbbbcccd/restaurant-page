@@ -35,24 +35,3 @@ div.border {
     width: 1px;
     background-color: rgb(222,222,222);
 }
-
-#content {
-    padding: 1rem 3rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  
-    grid-auto-rows: 300px;
-    gap: 1rem;
-}
-
-.card {
-    display: grid;
-    border: 1px solid red;
-    background-color: white;
-    border-radius: 8px;
-    padding: 8px 1rem;
-}
-
-.card>img {
-    width: 100%;
-    place-self: center;
-}
