@@ -26,7 +26,7 @@ menu = [burgerOne, burgerTwo, burgerThree, burgerFour, burgerFive, burgerSix];
 // Creates and returns DOM content of Menu Page
 function createMenuPage() {
     let content = document.createElement('div');
-    content.setAttribute('id', 'content');
+    content.setAttribute('id', 'menu-page');
 
     for (const item of menu) {
         content.appendChild(createItemElement(item));
