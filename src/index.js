@@ -35,8 +35,6 @@ function switchTabs(target) {
             }
         }
         removeContent();
-        addContent(e.target.id);   
+        addContent(target.id);   
     }
 }
-
-body.appendChild(createMenuPage());
