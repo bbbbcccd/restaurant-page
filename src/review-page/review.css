@@ -31,10 +31,6 @@ form>button {
     width: 150px;
 }
 
-#review-header {
-    padding-bottom: 2rem;
-}
-
 #review-section {
     padding: 0.5rem;
     border: 1px solid rgb(200,200,200);
