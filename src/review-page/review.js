@@ -1,5 +1,21 @@
 import './review.css';
 
+// Review constructor to create review objects
+// Each review consists of a name and the content
+function Review(name, content) {
+    this.name = name;
+    this.content = content;
+}
+
+const reviewOne = new Review("John", "This cozy restaurant has left the best impressions!");
+const reviewTwo = new Review("Tom", "Hospitable hosts, delicious dishes, beautiful presentation");
+const reviewThree = new Review("Amy", "It’s a great experience. The ambiance is very welcoming and charming."); 
+const reviewFour = new Review("Jane", "The food is absolutely amazing – everything we tasted melted in other mouths. Absolutely the best meal we had in a long while");
+const reviewFive = new Review("Ayers", "We are so fortunate to have this place just a few minutes drive away from home.");
+
+// reviews is an array storing review objects to be displayed on the webpage
+const reviews = [reviewOne, reviewTwo, reviewThree, reviewFour, reviewFive];
+
 function setMultipleAttributes(el, attributes) {
     Object.keys(attributes).forEach(attr => {
         el.setAttribute(attr, attributes[attr]);
