@@ -24,7 +24,7 @@ function setMultipleAttributes(el, attributes) {
 
 function createReviewPage() {
     const content = document.createElement("div");
-    content.setAttribute('id', 'content');
+    content.setAttribute('id', 'review-page');
 
     const form = createForm();
     content.appendChild(form);
