@@ -78,7 +78,27 @@ function createReviewSection() {
     const reviewSection = document.createElement("div");
     reviewSection.setAttribute("id", "review-section");
 
+    reviews.forEach(review => {
+        const reviewEl = createReview(review);
+        reviewSection.appendChild(reviewEl);
+    });
+
     return reviewSection;
+}
+
+function createReview(review) {
+    const reviewDiv = document.createElement("div");
+    reviewDiv.classList.add("review");
+    
+    const reviewHeader = document.createElement("h4");
+    reviewHeader.textContent = review.name;
+    reviewDiv.appendChild(reviewHeader);
+
+    const reviewPara = document.createElement("p");
+    reviewPara.textContent = review.content;
+    reviewDiv.appendChild(reviewPara);
+
+    return reviewDiv;
 }
 
 export { createReviewPage };
