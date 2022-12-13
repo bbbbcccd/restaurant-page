@@ -16,6 +16,9 @@ function createReviewPage() {
     const header = createHeader();
     content.appendChild(header);
     
+    const reviewSection = createReviewSection();
+    content.appendChild(reviewSection);
+
     return content;
 }
 
@@ -53,6 +56,13 @@ function createHeader() {
     header.textContent = "Reviews (5)";
     
     return header;
+}
+
+function createReviewSection() {
+    const reviewSection = document.createElement("div");
+    reviewSection.setAttribute("id", "review-section");
+
+    return reviewSection;
 }
 
 export { createReviewPage };
