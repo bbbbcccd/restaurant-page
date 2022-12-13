@@ -5,23 +5,17 @@ import { createReviewPage } from './review-page/review.js';
 const body = document.getElementsByTagName("body")[0];
 const tabContainer = document.getElementById("tab-container");
 const tabs = tabContainer.querySelectorAll("button");
+const content = document.getElementById("content");
 
 tabContainer.addEventListener("click", (e) => {
     switchTabs(e.target);
 });
 
-function removeContent() {
-    const content = document.getElementById("content");
-    if (content !== null) {
-        body.removeChild(content);
-    }
-}
-
 function addContent(activeTab) {
     if (activeTab === "menu") {
-        body.appendChild(createMenuPage());
+        content.appendChild(createMenuPage());
     } else if (activeTab === "reviews") {
-        body.appendChild(createReviewPage());
+        content.appendChild(createReviewPage());
     }    
 }
 
@@ -34,7 +28,9 @@ function switchTabs(target) {
                 tab.classList.add("active");
             }
         }
-        removeContent();
+        content.innerHTML = '';
         addContent(target.id);   
     }
 }
+
+addContent("menu");
