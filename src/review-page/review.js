@@ -10,7 +10,12 @@ function createReviewPage() {
     const content = document.createElement("div");
     content.setAttribute('id', 'content');
 
-    content.appendChild(createForm());
+    const form = createForm();
+    content.appendChild(form);
+
+    const header = createHeader();
+    content.appendChild(header);
+    
     return content;
 }
 
@@ -40,6 +45,14 @@ function createForm() {
     form.appendChild(submitBtn);
 
     return form;
+}
+
+function createHeader() {
+    const header = document.createElement("h3");
+    header.setAttribute("id", "review-header");
+    header.textContent = "Reviews (5)";
+    
+    return header;
 }
 
 export { createReviewPage };
