@@ -1,0 +1,12 @@
+#about-us {
+    display: grid;
+    row-gap: 2rem;
+    place-items: center;
+}
+
+#about-us h2 {
+    display: grid;
+    place-items: center;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgb(222,222,222);
+}
