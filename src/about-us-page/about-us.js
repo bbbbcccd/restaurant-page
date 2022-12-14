@@ -26,6 +26,9 @@ function createAboutUsPage() {
     const openingHour = createOpeningHour();
     content.appendChild(openingHour);
 
+    const contactInfo = createContactInfo();
+    content.appendChild(contactInfo);
+
     return content;
 }
 
@@ -68,6 +71,20 @@ function createOpeningHour() {
     return openingHour;
 }
 
+function createContactInfo() {
+    const contactInfo = document.createElement('div');
+    contactInfo.setAttribute("id", "contact-info");
+
+    const header = createElementWithText("h2", "Contact Information");
+    contactInfo.appendChild(header);
+
+    const contact = createElementWithText("strong", "6123 4567");
+    const para = createElementWithText("p", "To make a reservation, please contact us @ ");
+    para.appendChild(contact);
+    contactInfo.appendChild(para);
+
+    return contactInfo;
+}
 
 
 export { createAboutUsPage };
