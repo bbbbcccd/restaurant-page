@@ -18,7 +18,7 @@ function addContent(activeTab) {
     } else if (activeTab === "reviews") {
         content.appendChild(createReviewPage());
     } else if (activeTab === "about-us") {
-        content.appendChild(createAboutUsPage);
+        content.appendChild(createAboutUsPage());
     }  
 }
 
