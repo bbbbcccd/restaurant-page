@@ -1,10 +1,10 @@
-#about-us {
+#about-us-page {
     display: grid;
     row-gap: 2rem;
     place-items: center;
 }
 
-#about-us h2 {
+#about-us-page h2 {
     display: grid;
     place-items: center;
     padding-bottom: 0.5rem;
