@@ -1,6 +1,7 @@
 import './styles.css';
 import { createMenuPage } from './menu-page/menu.js';
 import { createReviewPage } from './review-page/review.js';
+import { createAboutUsPage } from './about-us-page/about-us.js';
 
 const body = document.getElementsByTagName("body")[0];
 const tabContainer = document.getElementById("tab-container");
@@ -16,7 +17,9 @@ function addContent(activeTab) {
         content.appendChild(createMenuPage());
     } else if (activeTab === "reviews") {
         content.appendChild(createReviewPage());
-    }    
+    } else if (activeTab === "about-us") {
+        content.appendChild(createAboutUsPage);
+    }  
 }
 
 function switchTabs(target) {
