@@ -23,6 +23,9 @@ function createAboutUsPage() {
     const location = createLocation();
     content.appendChild(location);
 
+    const openingHour = createOpeningHour();
+    content.appendChild(openingHour);
+
     return content;
 }
 
@@ -48,6 +51,21 @@ function createLocation() {
     location.appendChild(image);
 
     return location;
+}
+
+function createOpeningHour() {
+    const openingHour = document.createElement('div');
+    openingHour.setAttribute("id", "opening-hour");
+
+    const header = createElementWithText("h2", "Opening Hours");
+    openingHour.appendChild(header);
+
+    const openingTime = createElementWithText("strong", "09:00am - 10:00pm");
+    const para = createElementWithText("p", "Our store is open everyday from ");
+    para.appendChild(openingTime);
+    openingHour.appendChild(para);
+
+    return openingHour;
 }
 
 
