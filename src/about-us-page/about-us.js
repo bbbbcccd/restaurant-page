@@ -48,7 +48,7 @@ function createLocation() {
     let imageAttributes = {
         'src': Map,
         'alt': 'Google Maps Image of the store',
-        'height': '300px', 
+        'width': '400px', 
     };
     setMultipleAttributes(image, imageAttributes);
     location.appendChild(image);
